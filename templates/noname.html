@@ -1,22 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-  <style>
-    #hello{
-        color: darkgray;
-    }
-    .hell{
-        color: blueviolet;
-        font-size: 30px;
-    }
-  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     </head>
     <body>
-        <div>
-            <h1 style="color: blue ; text-align:center">
-                Welcome to twitter
+        <div class='container'>
+            <h1 id='hello'>
+                Welcome to Noname
             </h1>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="There is a picture">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" width='350px' alt="There is a picture">
         <p class="hell">
             X («Экс»), обычно именуемая прежним названием «Тви́ттер» (англ. Twitter)[7][8], — американская социальная сеть. <br>
             br Это пятый по посещаемости сайт в мире и одна из крупнейших социальных сетей с 550 млн пользователей ежемесячно. <br>
@@ -30,6 +28,19 @@
  но в 2017 году ограничение было удвоено до 280 для большинства языков[13]. <br>
  Аудио- и видеотвиты остаются ограниченными 140 секундами для большинства аккаунтов.
         </p>
+        <ul> 
+            <l> <a href="{% url "telegram_path" %}"> Go to Telegram  </a> </l> <br>
+            <l> <a href="{% url "wikipedi_path" %}"> Go to Wikipedia </a> </l> <br>
+            <l> <a href="{% url "instagram_path" %}"> Go to Instagram  </a> </l> <br>
+            <l> <a href="{% url "whatsapp_path" %}"> Go to Whatsapp  </a> </l> <br>
+            <l> <a href="{% url "facebook_path" %}"> Go to Facebook  </a> </l> <br>
+            <l> <a href="{% url "linkedin_path" %}"> Go to linkedin  </a> </l> <br>
+            <l> <a href="{% url "microsoft_path" %}"> Go to Microsoft  </a> </l> <br>
+            <l> <a href="{% url "noname_path" %}"> Go to Noname  </a> </l> <br>
+            <l> <a href="{% url "twitter_path" %}"> Go to Twitter  </a> </l> <br>
+            <l> <a href="{% url "youtube_path" %}"> Go to YouTube  </a> </l> <br>
+ 
+         </ul>
         </div>
     </body>
 </html>

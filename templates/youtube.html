@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class='container'>
+            <h1  id='hello'>
+                Welcome to YouTube
+            </h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="350px" alt="There is a picture">
+        <p>
+            YouTube
+            Изображение логотипа
+            URL	youtube.com
+            Коммерческий	да
+            Тип сайта	видеохостинг
+            Регистрация	бесплатно
+            Язык (-и)	многоязычный
+            Посещаемость	2,5 млрд активных пользователей в месяц[1]
+            Язык программирования	Python
+            Go
+            Расположение сервера	 США, Сан-Бруно, Калифорния
+            Владелец	Google (с 2006 года)
+            Создатель	Стив Чен ад Хёрли
+            Джавед Карим
+            Начало работы	14 февраля 2005
+            Текущий статус	функционирует
+            Число сотрудников	▲ 2000+ чел. (2019)[2]
+            Слоган	Broadcast Yourself
+            Страна	
+            США
+            Логотип Викисклада Медиафайлы на Викискладе
+            YouTube (МФА: [ˈjuːt(j)uːb][3], юту́б[4], ютью́б[4]) — американский видеохостинг. <br>
+            Сервис основан в 2005 году, c октября 2006 года принадлежит компании Google. <br>
+            YouTube стал популярнейшим видеохостингом и вторым сайтом в мире по количеству посетителей[5]. <br>
+            На 2020 год у YouTube более 2,5 млрд ежемесячных пользователей, которые ежедневно просматривают <br>
+            более 1 млрд часов видео[6]. На 2021 год на сервисе насчитывалось в общей сложности около 14 млрд роликов. <br>
+
+
+            Бизнес-модель YouTube предполагает доход от рекламы и платного контента. <br>
+            Также существует опция YouTube Premium — платная подписка для просмотра роликов без рекламы. <br>
+            YouTube интегрирован в AdSense от Google, что позволяет зарабатывать как YouTube, так и создателям контента. <br>
+            В 2022 году годовой доход YouTube от рекламы составил 29,2 млрд долларов[7]. <br>
+
+            С момента приобретения компанией Google, YouTube вышел за рамки основного сайта и обзавёлся приложениями <br>
+            для мобильных и других платформ. Большая часть контента на YouTube создаётся пользователями, <br>
+            профессионалы из которых получили название «ютуберы». Известные СМИ и развлекательные компании также создают <br>
+            и развивают свои каналы на YouTube, чтобы охватить бо́льшую аудиторию.
+        </p>
+        <ul> 
+            <l> <a href="{% url "telegram_path" %}"> Go to Telegram  </a> </l>  <br>
+            <l> <a href="{% url "wikipedi_path" %}"> Go to Wikipedia </a> </l> <br>
+            <l> <a href="{% url "instagram_path" %}"> Go to Instagram  </a> </l> <br>
+            <l> <a href="{% url "whatsapp_path" %}"> Go to Whatsapp  </a> </l> <br>
+            <l> <a href="{% url "facebook_path" %}"> Go to Facebook  </a> </l> <br>
+            <l> <a href="{% url "linkedin_path" %}"> Go to linkedin  </a> </l> <br>
+            <l> <a href="{% url "microsoft_path" %}"> Go to Microsoft  </a> </l> <br>
+            <l> <a href="{% url "noname_path" %}"> Go to Noname  </a> </l> <br>
+            <l> <a href="{% url "twitter_path" %}"> Go to Twitter  </a> </l> <br>
+            <l> <a href="{% url "youtube_path" %}"> Go to YouTube  </a> </l> <br>
+ 
+         </ul>
+        </div>
+    </body>
+</html>

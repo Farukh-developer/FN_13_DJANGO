@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div class='container'>
+            <h1 id='hello'>
+                Welcome to whatsapp
+            </h1>
+            <img float:left; src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30%" alt="">
+        <p style="background-color: burlywood; font-size: 20px; float:right;">
+            More than 2 billion people in over 180 countries use WhatsApp1 to stay in touch with <br>
+            friends and family, anytime and anywhere. WhatsApp is free2 and offers simple, secure, reliable messaging and calling,<br>
+             available on phones all over the world. And yes, the name WhatsApp is a pun on the phrase What's Up.
+        </p>
+        <ul> 
+            <l> <a href="{% url "telegram_path" %}"> Go to Telegram  </a> </l> <br>
+            <l> <a href="{% url "wikipedi_path" %}"> Go to Wikipedia </a> </l> <br>
+            <l> <a href="{% url "instagram_path" %}"> Go to Instagram  </a> </l> <br>
+            <l> <a href="{% url "whatsapp_path" %}"> Go to Whatsapp  </a> </l> <br>
+            <l> <a href="{% url "facebook_path" %}"> Go to Facebook  </a> </l> <br>
+            <l> <a href="{% url "linkedin_path" %}"> Go to linkedin  </a> </l> <br>
+            <l> <a href="{% url "microsoft_path" %}"> Go to Microsoft  </a> </l> <br>
+            <l> <a href="{% url "noname_path" %}"> Go to Noname  </a> </l> <br>
+            <l> <a href="{% url "twitter_path" %}"> Go to Twitter  </a> </l> <br>
+            <l> <a href="{% url "youtube_path" %}"> Go to YouTube  </a> </l> <br>
+ 
+         </ul>
+        </div>
+    </body>
+</html>
