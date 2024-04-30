@@ -15,22 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-from.views import wikipedia, instagram, telegram, whatsapp, facebook, linkedin, microsoft, noname, twitter, youtube, ilets
-
-
+from django.urls import path
+from blog.views import instagram, telegram, youtube, linkeedin, linkeedin, twitter, whatsapp, microsoft, wikipedia, facebook
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('blog.urls', namespace='blog')),
-    path('wikipedia/',wikipedia, name="wikipedi_path"),
-    path('instagram/',instagram, name='instagram_path'),
-    path('telegram/',telegram, name='telegram_path'),
-    path('whatsapp/',whatsapp, name='whatsapp_path'),
-    path('facebook/',facebook, name='facebook_path'),
-    path('linkedin/',linkedin, name='linkedin_path'),
-    path('microsoft/',microsoft, name='microsoft_path'),
-    path('',noname, name='noname_path'),
-    path('twitter/',twitter, name='twitter_path'),
-    path('youtube/',youtube, name='youtube_path'),
-    path('ielts/',ilets, name='take_ilets')
+    path('instagram/',instagram),
+    path('telegram/',telegram),
+    path('youtube/',youtube),
+    path('linkeedin/',linkeedin),
+    path('twitter/',twitter),
+    path('whatsapp/',whatsapp),
+    path('microsoft/',microsoft),
+    path('wikipedia/',wikipedia),
+    path('facebook/',facebook)
+  
+     
 ]
