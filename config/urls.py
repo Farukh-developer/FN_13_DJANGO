@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blog.views import instagram, telegram, youtube, linkeedin, linkeedin, twitter, whatsapp, microsoft, wikipedia, facebook
+from blog.views import instagram, telegram, youtube, linkeedin, linkeedin, twitter, whatsapp, microsoft, wikipedia, facebook, find_name,find_id, find_email, find
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('instagram/',instagram),
@@ -27,7 +27,10 @@ urlpatterns = [
     path('whatsapp/',whatsapp),
     path('microsoft/',microsoft),
     path('wikipedia/',wikipedia),
-    path('facebook/',facebook)
-  
+    path('facebook/',facebook),
+    path('find_name/<str:name>/',find_name, name="name_search"),
+    path('find_id/<int:id>/',find_id, name="id_search"),
+    path('find_email/<str:email>/',find_email, name="email_search"),
+    
      
 ]
