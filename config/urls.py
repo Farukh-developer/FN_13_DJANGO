@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blog.views import instagram, telegram, youtube, linkeedin, linkeedin, twitter, whatsapp, microsoft, wikipedia, facebook, find_name,find_id, find_email, find
+from blog.views import instagram, telegram, youtube, linkeedin, linkeedin, twitter, whatsapp, microsoft, wikipedia, facebook, find_name,find_id, find_email
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('instagram/',instagram),
